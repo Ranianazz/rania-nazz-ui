@@ -1,50 +1,61 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #f7f6f6;
-  color: #333;
+  margin: 0; /* Remove default browser margin so layout starts flush with the window edges */
+  padding: 0; /* Remove default browser padding for a clean slate */
+  font-family: sans-serif; /* Use a simple, modern font for readability */
+  background-color: #f7f6f6; /* Light grey background for a soft, neutral feel */
+  color: #333; /* Dark grey text for good contrast against the light background */
 }
 
 img.top-image {
-  width: 100%;
-  height: 550px;
-  display: block;
-  margin: 0;
+  width: 100%; /* Make image span the full width of the page */
+  height: 550px; /* Fix image height to maintain consistent banner size */
+  display: block; /* Remove extra bottom space that inline images normally have */
+  margin: 0; /* Remove any default margins around the image */
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
+  display: flex; /* Use flexbox for flexible layout control */
+  flex-direction: column; /* Arrange child elements vertically */
+  justify-content: center; /* Vertically center items within the container */
+  align-items: center; /* Horizontally center items in the container */
+  max-width: 800px; /* Restrict width for better readability */
+  margin: 0 auto; /* Center container horizontally on the page */
+  padding: 2rem; /* Add space inside the container for breathing room */
+  text-align: left; /* Align text to the left for easier reading */
 }
 
 header,
 footer {
-  text-align: center;
-  margin-bottom: 2rem;
+  text-align: center; /* Center the text content horizontally */
+  margin-bottom: 2rem; /* Add spacing below header/footer to separate from content */
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2rem; /* Make main heading large for emphasis */
+  margin-bottom: 1rem; /* Add space below heading before next element */
 }
 
 h2 {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: #444;
+  margin-top: 2rem; /* Add space above subheadings to separate them from prior text */
+  font-size: 1.5rem; /* Slightly smaller than h1 for visual hierarchy */
+  color: #444; /* Medium grey for softer heading appearance */
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Space out sections so they don’t look cramped */
 }
 
 strong {
-  color: #2a7;
+  color: #2a7; /* Change bold text color to green for emphasis */
+}
+.toggle-btn {
+  margin-left: 10px; /* Space between heading and button */
+  padding: 4px 8px; /* Small button size */
+  font-size: 0.8rem; /* Slightly smaller than normal text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.section-text {
+  display: none; /* Hidden by default */
+  margin-top: 0.5rem; /* Small gap after heading */
 }
